@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Portfolio</title>
+  <style>
+    .from-primary{
+        --tw-gradient-from: #1d99ac;
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(34, 211, 238, 0));
+    }
+    .to-secondary {
+        --tw-gradient-to: #309e76;
+    }
+  </style>
 </head>
 <body class="antialised relative text-gray-600">
     <div class="absolute w-full min-h-screen">
@@ -16,6 +25,23 @@
             <a href="#services" class="text-cyan-600">Services</a>
             <a href="#work" class="text-cyan-600">Work</a>
             <a href="#contact" class="text-cyan-600">Contact</a>
+        </div>
+    </div>
+    <!-- Self promotion section -->
+    <div class="relative z-10 flex min-h-screen h-auto justify-center items-center">
+        <div class="relative max-w-4xl">
+            <div class="absolute z-10 inset-0 rounded-lg bg-gradient-to-r from-primary to-secondary shadow-lg skew-x-6 -skew-y-6">
+            </div>
+            <div class="relative z-20 bg-white md:flex justify-between p-12 shadow-lg rounded-lg w-full max-w-4xl">
+                <div class="sm:flex flex-col justify-between space-y-6 py-6 md:pr-10">
+                    <div class="">
+                        <h2 class="text-lg">Hello I Am</h2>
+                        <h1 class="pt-1 text-5xl font-bold text-gray-800">Dror K. Harvest</h1>
+                    </div>
+                        <p class="text-xl leading-relaxed">Self introduction text, lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <img src="images/profile.jpg" alt="Dror profile image" class="w-80 rounded-full flex-shrink-0 self-end">
+            </div>
         </div>
     </div>
  
